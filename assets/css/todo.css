@@ -1,5 +1,11 @@
+html {
+    height: 100%;
+}
 body {
     font-family: Roboto;
+    background: #22c1c3;
+    background: -webkit-linear-gradient(to bottom, #22c1c3, #fdbb2d);
+    background: linear-gradient(to bottom, #22c1c3, #fdbb2d);
 }
 
 h1 {
@@ -12,6 +18,10 @@ h1 {
     font-weight: normal;
 }
 
+.fa-plus {
+    float: right;
+}
+
 input {
     font-size: 18px;
     background: #f7f7f7;
@@ -19,6 +29,7 @@ input {
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     color: #2980b9;
+    border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus {
@@ -42,6 +53,23 @@ li {
 
 li:nth-child(2n){
     background: #f7f7f7;
+}
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
 }
 
 #container {
